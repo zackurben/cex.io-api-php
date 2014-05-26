@@ -58,14 +58,7 @@ class cexapi {
 	 * @return array JSON results
 	 */
 	private function post($url, $param = array()) {
-		$post = '';
-		if (!empty($param)) {
-	    	foreach($param as $k => $v) {
-				$post .= $k . '=' . $v . '&'; //Dirty, but work
-	    	}
-	    	
-			$post = substr($post, 0, strlen($post)-1);
-		}
+		$post = http_build_query($param);
 		
 		$ch = curl_init();
 		curl_setopt($ch, CURLOPT_URL, $url);
