@@ -7,10 +7,10 @@
  * BTC   : 1ipEA2fcVyjiUnBqUx7PVy5efktz2hucb
  * donate free =)
  * 
- * Update: 12/2/13
+ * Update: 08/31/17
  * Author: Zack Urben
  * Email : zackurben@gmail.com
- * Motivation BTC: 1HvXfXRP9gZqHPkQUCPKmt5wKyXDMADhvQ
+ * Motivation BTC: 18hoW7b6TrTJ9dtnPmD9Bz9HVXXRX6quKy
  */
 
 class cexapi {
