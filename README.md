@@ -194,3 +194,11 @@ True
 
 ## Additional Help
 * Cex.io online API documentation: https://cex.io/api
+
+## Known Issues
+
+The API always returns null. This Issue is caused by incorrect SSL certificates on the client. To fix this, download the [cURL .pem file](http://curl.haxx.se/ca/cacert.pem) and add the following line to your _php.ini_ file:
+
+```
+curl.cainfo=[PATH-TO]/cacert.pem
+```
